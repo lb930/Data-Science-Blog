@@ -158,8 +158,7 @@ window.onload = wrap_img;
 <h2 id="40-Years-of-Music-Industry-Sales">40 Years of Music Industry Sales<a class="anchor-link" href="#40-Years-of-Music-Industry-Sales"> </a></h2><p>The record industry has seen a lot of change over the years.</p>
 <p>8-tracks took a short-lived run at the dominance of vinyl, cassettes faded away as compact discs took the world by storm, and through it all, the music industry saw its revenue continue to climb. That is, until it was digitally disrupted.</p>
 <p>Looking back at four decades of U.S. music industry sales data is a fascinating exercise as it charts not only the rise and fall the record company profits, but seismic shifts in technology and consumer behavior as well.</p>
-<p>Sources: <a href="https://www.visualcapitalist.com/music-industry-sales/">https://www.visualcapitalist.com/music-industry-sales/</a>, <a href="https://www.riaa.com/u-s-sales-database/">https://www.riaa.com/u-s-sales-database/</a><br />
-Full script: <a href="https://github.com/lb930/Data-Visualisation/tree/master/MakeoverMonday/MM%20W21-2020%20Music%20Industry%20Sales">https://github.com/lb930/Data-Visualisation/tree/master/MakeoverMonday/MM%20W21-2020%20Music%20Industry%20Sales</a></p>
+<p>Sources: <a href="https://www.visualcapitalist.com/music-industry-sales/">https://www.visualcapitalist.com/music-industry-sales/</a>, <a href="https://www.riaa.com/u-s-sales-database/">https://www.riaa.com/u-s-sales-database/</a><br /></p>
 
 </div>
 </div>
@@ -173,7 +172,9 @@ Full script: <a href="https://github.com/lb930/Data-Visualisation/tree/master/Ma
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">selection</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">selection_multi</span><span class="p">(</span><span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Format group&quot;</span><span class="p">],</span> <span class="n">bind</span><span class="o">=</span><span class="s2">&quot;legend&quot;</span><span class="p">)</span>
 
-<span class="n">chart</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">mark_area</span><span class="p">()</span><span class="o">.</span><span class="n">configure_axis</span><span class="p">(</span><span class="n">grid</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+<span class="n">chart</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">mark_area</span><span class="p">()</span><span class="o">.</span><span class="n">configure_axis</span><span class="p">(</span><span class="n">grid</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span>
+    <span class="n">title</span><span class="o">=</span><span class="s2">&quot;40 Years of Music Industry Sales&quot;</span>
+<span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
     <span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s2">&quot;yearmonth(Year):T&quot;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Axis</span><span class="p">(</span><span class="nb">format</span><span class="o">=</span><span class="s2">&quot;%Y&quot;</span><span class="p">,</span> <span class="n">domain</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">tickSize</span><span class="o">=</span><span class="mi">0</span><span class="p">)),</span>
     <span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s2">&quot;sum(Value):Q&quot;</span><span class="p">,</span> <span class="n">stack</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="kc">None</span><span class="p">),</span>
     <span class="n">alt</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span>
@@ -304,7 +305,7 @@ Full script: <a href="https://github.com/lb930/Data-Visualisation/tree/master/Ma
       </div>
     </div>
 
-    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" title="fastai"><svg class="svg-icon grey"><use xlink:href="/Data-Science-Blog/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/Data-Science-Blog/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/https%3A%2F%2Fgithub.com%2Flb930" title="https://github.com/lb930"><svg class="svg-icon grey"><use xlink:href="/Data-Science-Blog/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/https%3A%2F%2Ftwitter.com%2Fluisabez_" title="https://twitter.com/luisabez_"><svg class="svg-icon grey"><use xlink:href="/Data-Science-Blog/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
 </div>
 
   </div>
